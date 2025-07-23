@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.tomalbrc.minivfx.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "server": [
+    "AbstractArrowMixin",
+    "ItemEntityMixin",
+    "block.CampfireBlockMixin",
+    "block.JukeboxSongPlayerMixin",
+    "block.JukeboxBlockMixin",
+    "block.ServerLevelMixin",
+    "block.TorchBlockMixin",
+    "block.WallTorchBlockMixin",
+    "mob.CowMixin",
+    "mob.MushroomCowSoupMixin",
+    "mob.MushroomCowShearMixin",
+    "mob.SheepMixin"
+  ],
+  "plugin": "de.tomalbrc.minivfx.impl.VfxMixinConfigPlugin",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

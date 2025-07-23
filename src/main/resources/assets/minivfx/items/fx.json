@@ -1,0 +1,51 @@
+{
+  "model": {
+    "cases": [
+      {
+        "when": "uncommon",
+        "model": {
+          "model": "dropvfx:item/uncommon",
+          "type": "minecraft:model",
+          "tints": [
+            {
+              "type": "minecraft:dye",
+              "default": 8355711
+            }
+          ]
+        }
+      },
+      {
+        "when": "rare",
+        "model": {
+          "model": "dropvfx:item/rare",
+          "type": "minecraft:model",
+          "tints": [
+            {
+              "type": "minecraft:dye",
+              "default": 8355711
+            }
+          ]
+        }
+      },
+      {
+        "when": "epic",
+        "model": {
+          "model": "dropvfx:item/epic",
+          "type": "minecraft:model",
+          "tints": [
+            {
+              "type": "minecraft:dye",
+              "default": 8355711
+            }
+          ]
+        }
+      }
+    ],
+    "property": "minecraft:component",
+    "component": "minecraft:rarity",
+    "fallback": {
+      "type": "minecraft:empty"
+    },
+    "type": "minecraft:select"
+  }
+}

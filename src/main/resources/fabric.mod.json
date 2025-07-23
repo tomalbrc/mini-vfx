@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "dropvfx",
+  "version": "${version}",
+  "name": "DropVFX",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/dropvfx/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "de.tomalbrc.dropvfx.Dropvfx"
+    ]
+  },
+  "mixins": [
+    "dropvfx.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
