@@ -1,8 +1,8 @@
-package de.tomalbrc.dropvfx;
+package de.tomalbrc.minivfx;
 
-import de.tomalbrc.dropvfx.config.ModConfig;
-import de.tomalbrc.dropvfx.event.CowEvents;
-import de.tomalbrc.dropvfx.event.SheepEvents;
+import de.tomalbrc.minivfx.config.ModConfig;
+import de.tomalbrc.minivfx.event.CowEvents;
+import de.tomalbrc.minivfx.event.SheepEvents;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
@@ -13,11 +13,11 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.shapes.Shapes;
 
-import static de.tomalbrc.dropvfx.Util.broadcast;
-import static de.tomalbrc.dropvfx.Util.shapedItemParticles;
+import static de.tomalbrc.minivfx.Util.broadcast;
+import static de.tomalbrc.minivfx.Util.shapedItemParticles;
 
-public class DropVfx implements ModInitializer {
-    public static final String MOD_ID = "dropvfx";
+public class MiniVfx implements ModInitializer {
+    public static final String MOD_ID = "mini-vfx";
 
     @Override
     public void onInitialize() {

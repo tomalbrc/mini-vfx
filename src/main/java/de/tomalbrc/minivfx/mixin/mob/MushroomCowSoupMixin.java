@@ -1,6 +1,6 @@
-package de.tomalbrc.dropvfx.mixin.mob;
+package de.tomalbrc.minivfx.mixin.mob;
 
-import de.tomalbrc.dropvfx.event.CowEvents;
+import de.tomalbrc.minivfx.event.CowEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.animal.AbstractCow;

@@ -1,8 +1,7 @@
-package de.tomalbrc.dropvfx.event;
+package de.tomalbrc.minivfx.event;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.animal.AbstractCow;
 import net.minecraft.world.entity.animal.MushroomCow;
 import net.minecraft.world.entity.player.Player;

@@ -1,6 +1,6 @@
-package de.tomalbrc.dropvfx.mixin.block;
+package de.tomalbrc.minivfx.mixin.block;
 
-import de.tomalbrc.dropvfx.impl.CampfireEmitter;
+import de.tomalbrc.minivfx.impl.CampfireEmitter;
 import eu.pb4.polymer.virtualentity.api.BlockWithElementHolder;
 import eu.pb4.polymer.virtualentity.api.ElementHolder;
 import net.minecraft.core.BlockPos;

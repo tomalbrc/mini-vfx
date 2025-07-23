@@ -1,4 +1,4 @@
-package de.tomalbrc.dropvfx.config;
+package de.tomalbrc.minivfx.config;
 
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 
 public class ModConfig {
-    static Path CONFIG_FILE_PATH = FabricLoader.getInstance().getConfigDir().resolve("dropvfx.json");
+    static Path CONFIG_FILE_PATH = FabricLoader.getInstance().getConfigDir().resolve("mini-vfx.json");
     static ModConfig instance;
     public static GsonBuilder JSON = new GsonBuilder().setPrettyPrinting();
 
@@ -60,7 +60,7 @@ public class ModConfig {
     }
 
     public static class Explosion {
-        public boolean enabled = true;
+        public boolean enabled = false;
     }
 
     public static class Items {

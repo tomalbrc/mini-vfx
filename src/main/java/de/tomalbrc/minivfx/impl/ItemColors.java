@@ -1,4 +1,4 @@
-package de.tomalbrc.dropvfx.impl;
+package de.tomalbrc.minivfx.impl;
 
 import it.unimi.dsi.fastutil.objects.Reference2IntOpenHashMap;
 import net.minecraft.core.Holder;

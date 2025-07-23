@@ -1,6 +1,6 @@
-package de.tomalbrc.dropvfx.impl;
+package de.tomalbrc.minivfx.impl;
 
-import de.tomalbrc.dropvfx.config.ModConfig;
+import de.tomalbrc.minivfx.config.ModConfig;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -81,6 +81,6 @@ public class VfxMixinConfigPlugin implements IMixinConfigPlugin {
     }
 
     private boolean is(String mixinClassName, String s2) {
-        return ("de.tomalbrc.dropvfx.mixin." + s2).equals(mixinClassName);
+        return ("de.tomalbrc.minivfx.mixin." + s2).equals(mixinClassName);
     }
 }

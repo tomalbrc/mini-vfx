@@ -1,7 +1,7 @@
-package de.tomalbrc.dropvfx.impl;
+package de.tomalbrc.minivfx.impl;
 
-import de.tomalbrc.dropvfx.DropVfx;
-import de.tomalbrc.dropvfx.config.ModConfig;
+import de.tomalbrc.minivfx.MiniVfx;
+import de.tomalbrc.minivfx.config.ModConfig;
 import eu.pb4.polymer.virtualentity.api.ElementHolder;
 import eu.pb4.polymer.virtualentity.api.VirtualEntityUtils;
 import eu.pb4.polymer.virtualentity.api.attachment.EntityAttachment;
@@ -19,13 +19,12 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.component.DyedItemColor;
-import net.minecraft.world.level.block.WallTorchBlock;
 import org.joml.Vector3f;
 
 import java.util.function.Consumer;
 
 public class ItemEmitter extends ElementHolder {
-    final private static ResourceLocation MODEL = ResourceLocation.fromNamespaceAndPath(DropVfx.MOD_ID, "fx");
+    final private static ResourceLocation MODEL = ResourceLocation.fromNamespaceAndPath(MiniVfx.MOD_ID, "fx");
 
     final ItemDisplayElement itemDisplayElement;
     final ItemEntity parent;

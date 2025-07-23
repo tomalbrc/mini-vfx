@@ -1,7 +1,7 @@
-package de.tomalbrc.dropvfx.mixin.block;
+package de.tomalbrc.minivfx.mixin.block;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import de.tomalbrc.dropvfx.impl.ParticleExplosionEmitter;
+import de.tomalbrc.minivfx.impl.ParticleExplosionEmitter;
 import eu.pb4.polymer.virtualentity.api.attachment.ChunkAttachment;
 import net.minecraft.core.Holder;
 import net.minecraft.core.particles.ParticleOptions;

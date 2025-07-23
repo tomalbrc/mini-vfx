@@ -1,6 +1,6 @@
-package de.tomalbrc.dropvfx.mixin.mob;
+package de.tomalbrc.minivfx.mixin.mob;
 
-import de.tomalbrc.dropvfx.event.SheepEvents;
+import de.tomalbrc.minivfx.event.SheepEvents;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.animal.sheep.Sheep;
 import net.minecraft.world.item.ItemStack;

@@ -1,6 +1,6 @@
-package de.tomalbrc.dropvfx.impl;
+package de.tomalbrc.minivfx.impl;
 
-import de.tomalbrc.dropvfx.config.ModConfig;
+import de.tomalbrc.minivfx.config.ModConfig;
 import eu.pb4.polymer.virtualentity.api.attachment.BlockAwareAttachment;
 import eu.pb4.polymer.virtualentity.api.attachment.HolderAttachment;
 import net.minecraft.core.particles.DustColorTransitionOptions;

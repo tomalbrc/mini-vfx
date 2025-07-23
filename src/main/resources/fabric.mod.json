@@ -1,25 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "dropvfx",
+  "id": "mini-vfx",
   "version": "${version}",
-  "name": "DropVFX",
+  "name": "mini-vfx",
   "description": "",
-  "authors": [],
-  "contact": {},
+  "authors": ["tomalbrc"],
   "license": "LGPL-3.0",
-  "icon": "assets/dropvfx/icon.png",
+  "icon": "minivfx.png",
   "environment": "server",
   "entrypoints": {
     "main": [
-      "de.tomalbrc.dropvfx.Dropvfx"
+      "de.tomalbrc.minivfx.MiniVfx"
     ]
   },
   "mixins": [
-    "dropvfx.mixins.json"
+    "minivfx.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": ">=${minecraft_version}"
   }
 }

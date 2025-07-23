@@ -1,6 +1,6 @@
-package de.tomalbrc.dropvfx.config;
+package de.tomalbrc.minivfx.config;
 
-import de.tomalbrc.dropvfx.impl.ItemColors;
+import de.tomalbrc.minivfx.impl.ItemColors;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;

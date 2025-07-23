@@ -1,4 +1,4 @@
-package de.tomalbrc.dropvfx.impl;
+package de.tomalbrc.minivfx.impl;
 
 import eu.pb4.polymer.virtualentity.api.ElementHolder;
 import net.minecraft.core.particles.ParticleOptions;

@@ -1,11 +1,11 @@
-package de.tomalbrc.dropvfx;
+package de.tomalbrc.minivfx;
 
 import com.mojang.serialization.JsonOps;
-import de.tomalbrc.dropvfx.config.ColorEntry;
-import de.tomalbrc.dropvfx.config.ColorRGB;
-import de.tomalbrc.dropvfx.config.DefaultColors;
-import de.tomalbrc.dropvfx.config.ModConfig;
-import de.tomalbrc.dropvfx.impl.ItemColors;
+import de.tomalbrc.minivfx.config.ColorEntry;
+import de.tomalbrc.minivfx.config.ColorRGB;
+import de.tomalbrc.minivfx.config.DefaultColors;
+import de.tomalbrc.minivfx.config.ModConfig;
+import de.tomalbrc.minivfx.impl.ItemColors;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import it.unimi.dsi.fastutil.objects.ObjectArraySet;

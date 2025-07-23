@@ -1,4 +1,4 @@
-package de.tomalbrc.dropvfx.impl;
+package de.tomalbrc.minivfx.impl;
 
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.TrailParticleOption;

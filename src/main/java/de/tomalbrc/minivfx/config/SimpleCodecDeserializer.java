@@ -1,4 +1,4 @@
-package de.tomalbrc.dropvfx.config;
+package de.tomalbrc.minivfx.config;
 
 import com.google.gson.*;
 import com.mojang.serialization.Codec;

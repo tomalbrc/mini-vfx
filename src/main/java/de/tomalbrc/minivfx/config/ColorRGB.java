@@ -1,4 +1,4 @@
-package de.tomalbrc.dropvfx.config;
+package de.tomalbrc.minivfx.config;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
