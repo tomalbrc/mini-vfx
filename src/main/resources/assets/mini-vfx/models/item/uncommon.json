@@ -2,9 +2,9 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "minivfx:item/beam",
-		"1": "minivfx:item/circle",
-		"particle": "minivfx:item/beam"
+		"0": "mini-vfx:item/beam",
+		"1": "mini-vfx:item/circle",
+		"particle": "mini-vfx:item/beam"
 	},
 	"elements": [
 		{

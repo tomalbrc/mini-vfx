@@ -2,15 +2,15 @@
 	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "minivfx:item/beam",
-		"1": "minivfx:item/circle",
-		"2": "minivfx:item/trail",
-		"3": "minivfx:item/trail2",
-		"4": "minivfx:item/star",
-		"5": "minivfx:item/star2",
-		"6": "minivfx:item/star_b",
-		"7": "minivfx:item/star_b2",
-		"particle": "minivfx:item/beam"
+		"0": "mini-vfx:item/beam",
+		"1": "mini-vfx:item/circle",
+		"2": "mini-vfx:item/trail",
+		"3": "mini-vfx:item/trail2",
+		"4": "mini-vfx:item/star",
+		"5": "mini-vfx:item/star2",
+		"6": "mini-vfx:item/star_b",
+		"7": "mini-vfx:item/star_b2",
+		"particle": "mini-vfx:item/beam"
 	},
 	"elements": [
 		{

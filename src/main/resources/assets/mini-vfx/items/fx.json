@@ -4,7 +4,7 @@
       {
         "when": "uncommon",
         "model": {
-          "model": "minivfx:item/uncommon",
+          "model": "mini-vfx:item/uncommon",
           "type": "minecraft:model",
           "tints": [
             {
@@ -17,7 +17,7 @@
       {
         "when": "rare",
         "model": {
-          "model": "minivfx:item/rare",
+          "model": "mini-vfx:item/rare",
           "type": "minecraft:model",
           "tints": [
             {
@@ -30,7 +30,7 @@
       {
         "when": "epic",
         "model": {
-          "model": "minivfx:item/epic",
+          "model": "mini-vfx:item/epic",
           "type": "minecraft:model",
           "tints": [
             {
