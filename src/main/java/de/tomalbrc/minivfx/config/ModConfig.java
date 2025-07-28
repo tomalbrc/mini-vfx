@@ -3,6 +3,7 @@ package de.tomalbrc.minivfx.config;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.annotations.SerializedName;
+import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.FileNotFoundException;
@@ -11,6 +12,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
+import java.util.Map;
 
 public class ModConfig {
     static Path CONFIG_FILE_PATH = FabricLoader.getInstance().getConfigDir().resolve("mini-vfx.json");
@@ -27,8 +29,15 @@ public class ModConfig {
     public Jukebox jukebox = new Jukebox();
     public Explosion explosion = new Explosion();
     public Arrow arrow = new Arrow();
+    @SerializedName("item-rarities")
+    public Map<String, RarityOption> itemRarities = new Object2ObjectArrayMap<>(Map.of("common", new RarityOption(), "uncommon", new RarityOption(), "rare", new RarityOption(), "epic", new RarityOption()));
     @SerializedName("item-colors")
     public JsonElement itemColors = null;
+
+    public static class RarityOption {
+        @SerializedName("show-particles")
+        public boolean showParticles = true;
+    }
 
     public static class Cow {
         public boolean milk = true;

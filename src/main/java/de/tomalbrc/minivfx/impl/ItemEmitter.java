@@ -33,6 +33,8 @@ public class ItemEmitter extends ElementHolder {
     final int[] palette;
     final int mod;
 
+    final boolean particles;
+
     public ItemEmitter(ItemEntity itemEntity, int color, Rarity rarity) {
         super();
 
@@ -44,6 +46,7 @@ public class ItemEmitter extends ElementHolder {
             rarity = Rarity.UNCOMMON;
 
         this.mod = mod();
+        this.particles = ModConfig.getInstance().itemRarities.get(rarity.getSerializedName()).showParticles;
 
         this.palette = new int[6];
         var len = this.palette.length;
@@ -90,6 +93,9 @@ public class ItemEmitter extends ElementHolder {
     protected void onTick() {
         super.onTick();
 
+        if (!particles)
+            return;
+
         var attachment = this.getAttachment();
         if (attachment != null && this.parent.getAge() > 5) {
             var serverLevel = attachment.getWorld();
@@ -103,6 +109,9 @@ public class ItemEmitter extends ElementHolder {
 
     public static void attach(ItemEntity entity, int color, Rarity rarity) {
         var model = new ItemEmitter(entity, color, rarity);
-        EntityAttachment.ofTicking(model, entity);
+        if (ModConfig.getInstance().itemRarities.get(rarity.getSerializedName()).showParticles)
+            EntityAttachment.ofTicking(model, entity);
+        else
+            EntityAttachment.of(model, entity);
     }
 }

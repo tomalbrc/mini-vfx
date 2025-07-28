@@ -7,7 +7,7 @@
   "authors": ["tomalbrc"],
   "license": "LGPL-3.0",
   "icon": "minivfx.png",
-  "environment": "server",
+  "environment": "*",
   "entrypoints": {
     "main": [
       "de.tomalbrc.minivfx.MiniVfx"
@@ -19,6 +19,7 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
+    "polymer-core": "*",
     "minecraft": ">=${minecraft_version}"
   }
 }
