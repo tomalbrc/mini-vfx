@@ -31,9 +31,6 @@ dependencies {
     modImplementation("eu.pb4:polymer-resource-pack-extras:${project.polymer_version}")
     modImplementation("eu.pb4:polymer-virtual-entity:${project.polymer_version}")
     modRuntimeOnly("eu.pb4:polymer-autohost:${project.polymer_version}")
-
-    // Permission API
-    modImplementation include("me.lucko:fabric-permissions-api:${project.fpapi_version}")
 }
 
 processResources {

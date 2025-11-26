@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "de.tomalbrc.minivfx.mixin",
   "compatibilityLevel": "JAVA_21",
-  "server": [
+  "mixins": [
     "AbstractArrowMixin",
     "ItemEntityMixin",
     "block.CampfireBlockMixin",
