@@ -11,7 +11,7 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.TrailParticleOption;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.network.ServerGamePacketListenerImpl;
 import net.minecraft.world.entity.Display;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -19,12 +19,13 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.component.DyedItemColor;
+import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
 
 import java.util.function.Consumer;
 
 public class ItemEmitter extends ElementHolder {
-    final private static ResourceLocation MODEL = ResourceLocation.fromNamespaceAndPath(MiniVfx.MOD_ID, "fx");
+    final private static Identifier MODEL = Identifier.fromNamespaceAndPath(MiniVfx.MOD_ID, "fx");
 
     final ItemDisplayElement itemDisplayElement;
     final ItemEntity parent;
@@ -83,7 +84,7 @@ public class ItemEmitter extends ElementHolder {
     }
 
     @Override
-    protected void startWatchingExtraPackets(ServerGamePacketListenerImpl player, Consumer<Packet<ClientGamePacketListener>> packetConsumer) {
+    protected void startWatchingExtraPackets(ServerGamePacketListenerImpl player, Consumer<Packet<@NotNull ClientGamePacketListener>> packetConsumer) {
         super.startWatchingExtraPackets(player, packetConsumer);
 
         if (this.itemDisplayElement != null) packetConsumer.accept(VirtualEntityUtils.createRidePacket(this.parent.getId(), IntList.of(this.itemDisplayElement.getEntityId())));
