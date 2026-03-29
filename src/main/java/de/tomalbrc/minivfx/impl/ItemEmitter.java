@@ -87,7 +87,7 @@ public class ItemEmitter extends ElementHolder {
     protected void startWatchingExtraPackets(ServerGamePacketListenerImpl player, Consumer<Packet<@NotNull ClientGamePacketListener>> packetConsumer) {
         super.startWatchingExtraPackets(player, packetConsumer);
 
-        if (this.itemDisplayElement != null) packetConsumer.accept(VirtualEntityUtils.createRidePacket(this.parent.getId(), IntList.of(this.itemDisplayElement.getEntityId())));
+        if (this.itemDisplayElement != null) packetConsumer.accept(VirtualEntityUtils.createClientboundSetPassengersPacket(this.parent.getId(), IntList.of(this.itemDisplayElement.getEntityId())));
     }
 
     @Override
