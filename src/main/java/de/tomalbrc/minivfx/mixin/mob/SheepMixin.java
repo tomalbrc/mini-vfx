@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Sheep.class)
 public class SheepMixin {
-    @Inject(method = "method_61475", at = @At(value = "TAIL"))
+    @Inject(method = "lambda$shear$0", at = @At(value = "TAIL"))
     private void vfx$shear(ServerLevel serverLevel, ItemStack itemStack, CallbackInfo ci) {
         SheepEvents.SHEAR.invoker().shear(serverLevel, (Sheep)(Object)this, itemStack);
     }

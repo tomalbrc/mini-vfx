@@ -1,7 +1,8 @@
 package de.tomalbrc.minivfx.mixin;
 
-import de.tomalbrc.minivfx.impl.ItemEmitter;
 import de.tomalbrc.minivfx.impl.ItemColors;
+import de.tomalbrc.minivfx.impl.ItemEmitter;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -26,7 +27,7 @@ public abstract class ItemEntityMixin extends Entity {
 
     @Inject(method = "setItem", at = @At("TAIL"))
     public void minivfx$initItem(ItemStack itemStack, CallbackInfo ci) {
-        if (!minivfx$didInit && !level().isClientSide()) {
+        if (!minivfx$didInit && level() instanceof ServerLevel) {
             ItemEmitter.attach((ItemEntity) (Object) this, ItemColors.get(getItem().getItem()), getItem().getRarity());
             minivfx$didInit = true;
         }
