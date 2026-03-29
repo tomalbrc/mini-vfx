@@ -24,6 +24,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.joml.Math;
@@ -122,7 +123,7 @@ public class Util {
                         double xOffset = deltaX * dx + minX;
                         double yOffset = deltaY * dy + minY;
                         double zOffset = deltaZ * dz + minZ;
-                        packets.add(new ClientboundLevelParticlesPacket(new ItemParticleOption(ParticleTypes.ITEM, ((Math.ceil(Math.random()+0.5) == 1) ? stack : stack2).getItem()), true, false, finalPos.x() + xOffset, finalPos.y() + yOffset, finalPos.z() + zOffset, (float) deltaX - 0.5f, (float) deltaY - 0.5f, (float) deltaZ - 0.5f, 0.25f, 0));
+                        packets.add(new ClientboundLevelParticlesPacket(new ItemParticleOption(ParticleTypes.ITEM, ItemStackTemplate.fromNonEmptyStack((Math.ceil(Math.random()+0.5) == 1) ? stack : stack2)), true, false, finalPos.x() + xOffset, finalPos.y() + yOffset, finalPos.z() + zOffset, (float) deltaX - 0.5f, (float) deltaY - 0.5f, (float) deltaZ - 0.5f, 0.25f, 0));
                     }
                 }
             }
