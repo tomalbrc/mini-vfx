@@ -39,7 +39,7 @@ public class MiniVfx implements ModInitializer {
         });
 
         CowEvents.MILK.register((player, cow) -> {
-            var packet = shapedItemParticles(Block.cube(0.5), Items.WHITE_CONCRETE.getDefaultInstance(), cow.position().add(0, cow.getBbHeight() / 6, 0));
+            var packet = shapedItemParticles(Block.cube(0.5), Items.CONCRETE.white().getDefaultInstance(), cow.position().add(0, cow.getBbHeight() / 6, 0));
             if (packet != null) broadcast((ServerLevel) player.level(), cow.position(), packet);
         });
 
